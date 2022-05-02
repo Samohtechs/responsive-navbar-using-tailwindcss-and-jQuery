@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar | TailWindCss | SamohTechs</title>
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="mx-auto lg:px-10">
+        <!-- Navbar Component -->
+        <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+            <!-- BRAND NAME -->
+            <a href="#" class="p-2 mr-4 inline-flex items-center">
+                <span class="text-xl text-white font-bold uppercase tracking-wide"> Responsive Navbar</span>
+            </a>
+            <!-- END BRAND NAME -->
+
+            <!-- Button to show menu on small screens -->
+            <button class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto nav-toggler data-target="#topnavbar">
+                <img src="assets/icons/menu_48px.png" alt="menu" class="bg-gray-400 w-5 h-5" />
+            </button>
+            <!-- END BUTTON TOGGLER -->
+
+            <!-- Outer Menu Div -->
+            <div class="hidden w-full lg:inline-flex lg:flex-grow lg:w-auto" id="topnavbar">
+                <!-- Inner Menu Div -->
+                <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col">
+                    <!-- Menu Links -->
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-400 hover:text-white hover:bg-gray-900">
+                        <span>
+                            Home
+                        </span>
+                    </a>
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-400 hover:text-white hover:bg-gray-900">
+                        <span>
+                            About
+                        </span>
+                    </a>
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-400 hover:text-white hover:bg-gray-900">
+                        <span>
+                            Services
+                        </span>
+                    </a>
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-400 hover:text-white hover:bg-gray-900">
+                        <span>
+                            Gallery
+                        </span>
+                    </a>
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-400 hover:text-white hover:bg-gray-900">
+                        <span>
+                            Products
+                        </span>
+                    </a>
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-400 hover:text-white hover:bg-gray-900">
+                        <span>
+                            Contact Us
+                        </span>
+                    </a>
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-gray-400 hover:text-white hover:bg-gray-900 font-bold">
+                        <span>
+                            LOGIN
+                        </span>
+                    </a>
+                </div> <!-- END INNER DIV -->
+            </div> <!-- END OUTER DIV -->
+        </nav> <!-- END NAV COMPONENT -->
+
+        <!-- ALERT COMPONENT  -->
+        <!-- <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative my-5" role="alert">
+            <strong class="font-bold">HEY!</strong>
+            <span>
+                IT&apos;S JUST A RESPONSIVE NAVBAR.
+            </span>
+        </div> -->
+
+        <!-- CARD COMPONENT -->
+        <div class="max-w-sm mx-auto flex p-6 bg-gray-400 rounded-lg shadow-xl mt-16">
+            <div class="flex-shrink-0">
+                <img src="assets/icons/hello_48px.png" alt="" class="h-12 w-12">
+            </div>
+            <div class="ml-6 pt-1">
+                <h4 class="text-xl text-gray-900">Hey There!</h4>
+                <p class="text-base text-gray-700">
+                    It&apos;s Just A Responsive Navbar.
+                </p>
+            </div>
+        </div> <!-- END CARD COMPONENT -->
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
