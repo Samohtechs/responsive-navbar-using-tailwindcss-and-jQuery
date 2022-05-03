@@ -1,12 +1,10 @@
-.body-bg-color
+/* Have to add this media query for 
+ * displaying menu on large screens 
+*/
+@media (min-width: 1024px)
 {
-    background-color: #181A1B !important;
-}
-
-
-/* NAVIGATION LINKS TOGGLER VISIBL */
-/* @media (min-width:1024px) {
-    .top-navbar {
+    .top-navbar
+    {
         display: inline-flex !important;
     }
-} */
+}
